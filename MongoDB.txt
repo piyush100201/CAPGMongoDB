@@ -1,0 +1,114 @@
+Atlas atlas-xkdp7u-shard-0 [primary] bms> use onlineshoppingportal
+switched to db onlineshoppingportal
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.customer
+onlineshoppingportal.customer
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.address
+onlineshoppingportal.address
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.orders
+onlineshoppingportal.orders
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.vendors
+onlineshoppingportal.vendors
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.products
+onlineshoppingportal.products
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.product.insertMany([{prod_name:"Laptop",prod_cat:"Electronis",prod_price:50000},{prod_name:"chair",prod_cat:"Furniture",prod_price:1000}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("632d5bbae46cfe7f23606e3b"),
+    '1': ObjectId("632d5bbae46cfe7f23606e3c")
+  }
+}
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.product.find({},{prod_name:1,prod_price:1,_id:0});
+[
+  { prod_name: 'Laptop', prod_price: 50000 },
+  { prod_name: 'chair', prod_price: 1000 }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.orders.insertMany([{order_status:"delivered",order_amount:5000},{order_status:"pending",order_amount:2000},{order_status:"pending",order_amount:3000}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("632d5c49e46cfe7f23606e3d"),
+    '1': ObjectId("632d5c49e46cfe7f23606e3e"),
+    '2': ObjectId("632d5c49e46cfe7f23606e3f")
+  }
+}
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.orders.find({order_status:"pending"}).pretty();
+[
+  {
+    _id: ObjectId("632d5c49e46cfe7f23606e3e"),
+    order_status: 'pending',
+    order_amount: 2000
+  },
+  {
+    _id: ObjectId("632d5c49e46cfe7f23606e3f"),
+    order_status: 'pending',
+    order_amount: 3000
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.address.insertMany([{cus_city:"Delhi",cus_pin:600012,cus_address:"ABC"},{cus_city:"Delhi",cus_pin:600012,cus_address:"DEF"},{cus_city:"Jaipur",cus_pin:111111,cus_address:"JKL"}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("632d5d5ae46cfe7f23606e40"),
+    '1': ObjectId("632d5d5ae46cfe7f23606e41"),
+    '2': ObjectId("632d5d5ae46cfe7f23606e42")
+  }
+}
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.address.find({cus_pin:600012}).pretty();
+[
+  {
+    _id: ObjectId("632d5d5ae46cfe7f23606e40"),
+    cus_city: 'Delhi',
+    cus_pin: 600012,
+    cus_address: 'ABC'
+  },
+  {
+    _id: ObjectId("632d5d5ae46cfe7f23606e41"),
+    cus_city: 'Delhi',
+    cus_pin: 600012,
+    cus_address: 'DEF'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.customer.insertMany([{cus_name:"Ram",cus_email:"ram@gmail.com",cus_mob:"9999999",cus_city:"Delhi"},{cus_name:"Krishna",cus_email:"krishna@gmail.com",cus_mob:"8888888",cus_city:"Jaipur",{cus_name:"Shiv",cus_email:"shiv@gmail.com",cus_mob:"77777777",cus_city:"Delhi"}]);
+Uncaught:
+SyntaxError: Unexpected token (1:188)
+
+> 1 | db.customer.insertMany([{cus_name:"Ram",cus_email:"ram@gmail.com",cus_mob:"9999999",cus_city:"Delhi"},{cus_name:"Krishna",cus_email:"krishna@gmail.com",cus_mob:"8888888",cus_city:"Jaipur",{cus_name:"Shiv",cus_email:"shiv@gmail.com",cus_mob:"77777777",cus_city:"Delhi"}]);
+    |                                                                                                                                                                                             ^
+  2 |
+
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.customer.insertMany([{cus_name:"Ram",cus_email:"ram@gmail.com",cus_mob:"9999999",cus_city:"Delhi"},{cus_name:"Krishna",cus_email:"krishna@gmail.com",cus_mob:"8888888",cus_city:"Jaipur"},{cus_name:"Shiv",cus_email:"shiv@gmail.com",cus_mob:"77777777",cus_city:"Delhi"}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("632d5e2de46cfe7f23606e43"),
+    '1': ObjectId("632d5e2de46cfe7f23606e44"),
+    '2': ObjectId("632d5e2de46cfe7f23606e45")
+  }
+}
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.customer.find({cus_city:"Delhi"}).pretty();
+[
+  {
+    _id: ObjectId("632d5e2de46cfe7f23606e43"),
+    cus_name: 'Ram',
+    cus_email: 'ram@gmail.com',
+    cus_mob: '9999999',
+    cus_city: 'Delhi'
+  },
+  {
+    _id: ObjectId("632d5e2de46cfe7f23606e45"),
+    cus_name: 'Shiv',
+    cus_email: 'shiv@gmail.com',
+    cus_mob: '77777777',
+    cus_city: 'Delhi'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] onlineshoppingportal> db.vendor.insertMany([{v_name:"Ganesh",v_email:"ganesh@gmail.com",v_mob:"666666",v_wallet:"paytm"},{v_name:"vishnu",v_email:"vishnu@gmail.com",v_mob:"6999999",v_wallet:"phonepay"},{v_name:"brahma",v_email:"brahma@gmail.com",v_mob:"7888888",v_wallet:"googlepay"}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("632d5ee1e46cfe7f23606e46"),
+    '1': ObjectId("632d5ee1e46cfe7f23606e47"),
+    '2': ObjectId("632d5ee1e46cfe7f23606e48")
+  }
+}
