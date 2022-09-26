@@ -1,0 +1,1073 @@
+Atlas atlas-xkdp7u-shard-0 [primary] test> use db1
+switched to db db1
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db1.restaurants
+ReferenceError: db1 is not defined
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants
+db1.restaurants
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"Bakery",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurestaurant_id:"5075445}
+Uncaught:
+SyntaxError: Unterminated string constant. (1:421)
+
+> 1 | db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"Bakery",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurant_id:"5075445}
+    |                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+  2 |
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"Bakery",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurant_id:"5075445"}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"Bakery",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurant_id:"5075445"};
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:431)
+
+> 1 | db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"Bakery",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurant_id:"5075445"};
+    |                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+  2 |
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"Bakery",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurant_id:"5075445"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("633126e955663abc2b00da77")
+}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Hounslow",cuisine:"American
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Harrow",cuisine:"American",orders:[{date:{"$date":1393804800000},rating:"A",stars:2},{date:{"$date":1378857600000},rating:"A",stars:6},{date:{"$date":1358985600000},rating:"A",stars:10},{date:{"$date":132200640000},rating:"C",stars:9},{date:{"$date":1299715200000},rating:"B",stars:14}],name:"Just Bake Shop",restaurant_id:"5075445"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63312aa355663abc2b00da78")
+}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Croydon",cuisine:"Chinese",orders:[{date:{"$date":1393804800000},rating:"A",stars:12},{date:{"$date":1378857600000},rating:"A",stars:26},{date:{"$date":1358985600000},rating:"A",stars:30},{date:{"$date":132200640000},rating:"C",stars:29},{date:{"$date":1299715200000},rating:"B",stars:24}],name:"Wilson's restaurant",restaurant_id:"5075445"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63312b0055663abc2b00da79")
+}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"Windsor",cuisine:"Chinese",orders:[{date:{"$date":1393804800000},rating:"A",stars:12},{date:{"$date":1378857600000},rating:"A",stars:26},{date:{"$date":1358985600000},rating:"A",stars:30},{date:{"$date":132200640000},rating:"C",stars:29},{date:{"$date":1299715200000},rating:"B",stars:24}],name:"ABC abces",restaurant_id:"5075445"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63312b7055663abc2b00da7a")
+}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.insertOne({address:{building:"1007",street:"Highstreet",zipcode:"TW31HA"},borough:"WestMinister",cuisine:"Chinese",orders:[{date:{"$date":1393804800000},rating:"A",stars:1},{date:{"$date":1378857600000},rating:"A",stars:2},{date:{"$date":1358985600000},rating:"A",stars:3},{date:{"$date":132200640000},rating:"C",stars:2},{date:{"$date":1299715200000},rating:"B",stars:2}],name:"Regie's cafe",restaurant_id:"5075445"})
+{
+  acknowledged: true,
+  insertedId: ObjectId("63312bc555663abc2b00da7b")
+}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find().pretty();
+[
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Harrow',
+    cuisine: 'American',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 1 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 3 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 2 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 2 }
+    ],
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({},{restaurant_id:1,borough:1,cuisine:1,_id:0}).pretty();
+[
+  { borough: 'Hounslow', cuisine: 'Bakery', restaurant_id: '5075445' },
+  { borough: 'Harrow', cuisine: 'American', restaurant_id: '5075445' },
+  { borough: 'Croydon', cuisine: 'Chinese', restaurant_id: '5075445' },
+  { borough: 'Windsor', cuisine: 'Chinese', restaurant_id: '5075445' },
+  {
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({},{restaurant_id:1,borough:1,cuisine:1}).pretty();
+[
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    borough: 'Harrow',
+    cuisine: 'American',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    restaurant_id: '5075445'
+  },
+  {
+Atlas atlas-xkdp7u-shard-0 [primary] db1>
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({},{restaurant_id:1,name:1,borough:1,zipcode:1,_id:0}).pretty();
+[
+  {
+    borough: 'Hounslow',
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    borough: 'Harrow',
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    borough: 'Croydon',
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  },
+  { borough: 'Windsor', name: 'ABC abces', restaurant_id: '5075445' },
+  {
+    borough: 'WestMinister',
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({borough:"Harrow"}).pretty();
+[
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Harrow',
+    cuisine: 'American',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({borough:"Croydon"}).limit(5).pretty();
+[
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({borough:"Hounslow"}).skip(5).limit(5).pretty();
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.aggregate([
+... {
+..... $group: {
+.......          _id:'$restaurant_id',
+.......          totalStars : {$sum : '$Orders.stars'} ,
+....... },
+..... },
+... {$match:{totalStars:{$gt:90}}},
+... ]);
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.aggregate([ { $group: { _id: '$restaurant_id', totalStars: { $sum: '$orders.stars' } } }, { $match: { totalStars: { $gt: 90 } } }]);
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({$and:[{borough:"Hounslow"},{$or:[{cuisine:"American"},{cuisine:"Chinese"}]}]}).pretty()
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({$or:[{borough:"Windsor"},{borough:"Harrow"},{borough:"WestMinister"}]},{restaurant_id:1,name:1,borough:1,cuisine:1}).pretty();
+[
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    borough: 'Harrow',
+    cuisine: 'American',
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({$nor:[{borough:"Hounslow"},{borough:"Harrow"},{borough:"Ealing"}]},{restaurant_id:1,name:1,borough:1,cuisine:1}).pretty();
+[
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find().sort({name:1}).pretty();
+[
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Harrow',
+    cuisine: 'American',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 1 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 3 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 2 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 2 }
+    ],
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find().sort({name:-1}).pretty();
+[
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 1 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 3 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 2 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 2 }
+    ],
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Harrow',
+    cuisine: 'American',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find().sort({cuisine:1,borough:-1}).pretty();
+[
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Harrow',
+    cuisine: 'American',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 1 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 3 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 2 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 2 }
+    ],
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  }
+]
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({name:{$regex:"(?i)Wil"}}).pretty();
+[
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({name:{$regex:"(?-i)ces"}}).pretty();
+[
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({name:{$regex:/Reg/}}).pretty();
+[
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 1 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 3 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 2 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 2 }
+    ],
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({name:{$regex:/mon/}},{name:1,borough:1,cuisine:1}).pretty();
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({name:{$regex:"(?i)Mad"}},{name:1,borough:1,cuisine:1}).pretty();
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({name:{$regex:"(?i)Mad"}},{name:1,borough:1,cuisine:1}).pretty();
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({borough:"Hounslow"}).pretty();
+[
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  }
+]
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({$or:[{name:{$regex:"(?i)Wil"}},{$nor:[{cuisine:"American"},{cuisine:"Chinese"}]}]},{restaurant_id:1,borough:1,name:1,cuisine:1}).pretty();
+[
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  }
+]
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.restaurants.find({"address.street":{$exists:true}}).pretty();
+[
+  {
+    _id: ObjectId("633126e955663abc2b00da77"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Hounslow',
+    cuisine: 'Bakery',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312aa355663abc2b00da78"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Harrow',
+    cuisine: 'American',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 6 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 10 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 9 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 14 }
+    ],
+    name: 'Just Bake Shop',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b0055663abc2b00da79"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Croydon',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: "Wilson's restaurant",
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312b7055663abc2b00da7a"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'Windsor',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 12 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 26 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 30 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 29 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 24 }
+    ],
+    name: 'ABC abces',
+    restaurant_id: '5075445'
+  },
+  {
+    _id: ObjectId("63312bc555663abc2b00da7b"),
+    address: { building: '1007', street: 'Highstreet', zipcode: 'TW31HA' },
+    borough: 'WestMinister',
+    cuisine: 'Chinese',
+    orders: [
+      { date: { '$date': 1393804800000 }, rating: 'A', stars: 1 },
+      { date: { '$date': 1378857600000 }, rating: 'A', stars: 2 },
+      { date: { '$date': 1358985600000 }, rating: 'A', stars: 3 },
+      { date: { '$date': 132200640000 }, rating: 'C', stars: 2 },
+      { date: { '$date': 1299715200000 }, rating: 'B', stars: 2 }
+    ],
+    name: "Regie's cafe",
+    restaurant_id: '5075445'
+  }
+]
+
+
+
+
+
+
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.universities
+db1.universities
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.courses
+db1.courses
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.universities.insertOne({
+...   country : 'Spain',
+...   city : 'Salamanca',
+...   name : 'USAL',
+...   location : {
+.....     type : 'Point',
+.....     coordinates : [ -5.6722512,17, 40.9607792 ]
+.....   },
+...   students : [
+...     { year : 2014, number : 24774 },
+...     { year : 2015, number : 23166 },
+...     { year : 2016, number : 21913 },
+...     { year : 2017, number : 21715 }
+...   ]
+... });
+{
+  acknowledged: true,
+  insertedId: ObjectId("63313da9bec17138fc06dc68")
+}
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.universities.insertOne({
+...   country : 'Spain',
+...   city : 'Salamanca',
+...   name : 'UPSA',
+...   location : {
+.....     type : 'Point',
+.....     coordinates : [ -5.6691191,17, 40.9631732 ]
+.....   },
+...   students : [
+...     { year : 2014, number : 4788 },
+...     { year : 2015, number : 4821 },
+...     { year : 2016, number : 6550 },
+...     { year : 2017, number : 6125 }
+...   ]
+
+{
+  acknowledged: true,
+  insertedId: ObjectId("63313dcebec17138fc06dc69")
+}
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.courses.insertMany([{university:"USAL",name:"Computer Science",level:"Excellent"},{university:"USAL",name:"Electronicc",level:"Intermediate"},{university:"USAL",name:"Communication",level:"Excellent"}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("63313ea0bec17138fc06dc6a"),
+    '1': ObjectId("63313ea0bec17138fc06dc6b"),
+    '2': ObjectId("63313ea0bec17138fc06dc6c")
+  }
+}
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.universities.find({country:"Spain",city:"Salamanca"}).pretty();
+[
+  {
+    _id: ObjectId("63313da9bec17138fc06dc68"),
+    country: 'Spain',
+    city: 'Salamanca',
+    name: 'USAL',
+    location: { type: 'Point', coordinates: [ -5.6722512, 17, 40.9607792 ] },
+    students: [
+      { year: 2014, number: 24774 },
+      { year: 2015, number: 23166 },
+      { year: 2016, number: 21913 },
+      { year: 2017, number: 21715 }
+    ]
+  },
+  {
+    _id: ObjectId("63313dcebec17138fc06dc69"),
+    country: 'Spain',
+    city: 'Salamanca',
+    name: 'UPSA',
+    location: { type: 'Point', coordinates: [ -5.6691191, 17, 40.9631732 ] },
+    students: [
+      { year: 2014, number: 4788 },
+      { year: 2015, number: 4821 },
+      { year: 2016, number: 6550 },
+      { year: 2017, number: 6125 }
+    ]
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.universities.find({},{country:1,city:1,name:1}).pretty();
+[
+  {
+    _id: ObjectId("63313da9bec17138fc06dc68"),
+    country: 'Spain',
+    city: 'Salamanca',
+    name: 'USAL'
+  },
+  {
+    _id: ObjectId("63313dcebec17138fc06dc69"),
+    country: 'Spain',
+    city: 'Salamanca',
+    name: 'UPSA'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] db1> db.universities.find().limit(2).pretty();
+[
+  {
+    _id: ObjectId("63313da9bec17138fc06dc68"),
+    country: 'Spain',
+    city: 'Salamanca',
+    name: 'USAL',
+    location: { type: 'Point', coordinates: [ -5.6722512, 17, 40.9607792 ] },
+    students: [
+      { year: 2014, number: 24774 },
+      { year: 2015, number: 23166 },
+      { year: 2016, number: 21913 },
+      { year: 2017, number: 21715 }
+    ]
+  },
+  {
+    _id: ObjectId("63313dcebec17138fc06dc69"),
+    country: 'Spain',
+    city: 'Salamanca',
+    name: 'UPSA',
+    location: { type: 'Point', coordinates: [ -5.6691191, 17, 40.9631732 ] },
+    students: [
+      { year: 2014, number: 4788 },
+      { year: 2015, number: 4821 },
+      { year: 2016, number: 6550 },
+      { year: 2017, number: 6125 }
+    ]
+  }
+]
+
+
+
+
+
+
+Atlas atlas-xkdp7u-shard-0 [primary] db1> use emp
+switched to db emp
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.empl
+emp.empl
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.insertMany([{no:1,name:"ST",salary:2000,role:"OB"},{no:1,name:"MSD",salary:1500,role:"WK"},{no:3,name:"YS",salary:1000,role:"ALR"},{no:4,name:"RD",salary:1000,role:"MOB"},{no:5,name:"RS",salary:500,role:"OB"},{no:6,name:"BK",salary:500,role:"MOB"},{no:7,name:"VK",salary:300,role:"BW"},{no:8,name:"JB",salary:400,role:"BW"},{no:9,name:"HP",salary:400,role:"ALR"},{no:10,name:"VS",salary:300,role:"OB"}]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("633140debec17138fc06dc6d"),
+    '1': ObjectId("633140debec17138fc06dc6e"),
+    '2': ObjectId("633140debec17138fc06dc6f"),
+    '3': ObjectId("633140debec17138fc06dc70"),
+    '4': ObjectId("633140debec17138fc06dc71"),
+    '5': ObjectId("633140debec17138fc06dc72"),
+    '6': ObjectId("633140debec17138fc06dc73"),
+    '7': ObjectId("633140debec17138fc06dc74"),
+    '8': ObjectId("633140debec17138fc06dc75"),
+    '9': ObjectId("633140debec17138fc06dc76")
+  }
+}
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.find().pretty();
+[
+  {
+    _id: ObjectId("633140debec17138fc06dc6d"),
+    no: 1,
+    name: 'ST',mpp
+    salary: 2000,
+    role: 'OB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc6e"),
+    no: 1,
+    name: 'MSD',
+    salary: 1500,
+    role: 'WK'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc6f"),
+    no: 3,
+    name: 'YS',
+    salary: 1000,
+    role: 'ALR'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc70"),
+    no: 4,
+    name: 'RD',
+    salary: 1000,
+    role: 'MOB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc71"),
+    no: 5,
+    name: 'RS',
+    salary: 500,
+    role: 'OB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc72"),
+    no: 6,
+    name: 'BK',
+    salary: 500,
+    role: 'MOB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc73"),
+    no: 7,
+    name: 'VK',
+    salary: 300,
+    role: 'BW'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc74"),
+    no: 8,
+    name: 'JB',
+    salary: 400,
+    role: 'BW'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc75"),
+    no: 9,
+    name: 'HP',
+    salary: 400,
+    role: 'ALR'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc76"),
+    no: 10,
+    name: 'VS',
+    salary: 300,
+    role: 'OB'
+  }
+]
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.updateOne({name:"ST"},{$inc:{salary:8000}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.updateMany({},{$inc:{salary:4000}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 10,
+  modifiedCount: 10,
+  upsertedCount: 0
+}
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.updateOne({name:"MSD"},{$set:{role:"C and WK"}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.find({name:{$regex:/^S.*/}}).pretty();
+[
+  {
+    _id: ObjectId("633140debec17138fc06dc6d"),
+    no: 1,
+    name: 'ST',
+    salary: 22000,
+    role: 'OB'
+  }
+]
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.find({name:{$regex:/^R.*/}}).pretty();
+[
+  {
+    _id: ObjectId("633140debec17138fc06dc70"),
+    no: 4,
+    name: 'RD',
+    salary: 5000,
+    role: 'MOB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc71"),
+    no: 5,
+    name: 'RS',
+    salary: 4500,
+    role: 'OB'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.find({name:{$regex:/.*K$/}}).pretty();
+[
+  {
+    _id: ObjectId("633140debec17138fc06dc72"),
+    no: 6,
+    name: 'BK',
+    salary: 4500,
+    role: 'MOB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc73"),
+    no: 7,
+    name: 'VK',
+    salary: 4300,
+    role: 'BW'
+  }
+]
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.find({name:{$regex:/.*D$/}}).pretty();
+[
+  {
+    _id: ObjectId("633140debec17138fc06dc6e"),
+    no: 1,
+    name: 'MSD',
+    salary: 5500,
+    role: 'C and WK'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc70"),
+    no: 4,
+    name: 'RD',
+    salary: 5000,
+    role: 'MOB'
+  }
+]
+
+Atlas atlas-xkdp7u-shard-0 [primary] emp> db.emple.find({name:{$regex:/S/}}).pretty();
+[
+  {
+    _id: ObjectId("633140debec17138fc06dc6d"),
+    no: 1,
+    name: 'ST',
+    salary: 22000,
+    role: 'OB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc6e"),
+    no: 1,
+    name: 'MSD',
+    salary: 5500,
+    role: 'C and WK'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc6f"),
+    no: 3,
+    name: 'YS',
+    salary: 5000,
+    role: 'ALR'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc71"),
+    no: 5,
+    name: 'RS',
+    salary: 4500,
+    role: 'OB'
+  },
+  {
+    _id: ObjectId("633140debec17138fc06dc76"),
+    no: 10,
+    name: 'VS',
+    salary: 4300,
+    role: 'OB'
+  }
+]
+
+
+
+
+
